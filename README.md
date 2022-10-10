@@ -49,29 +49,29 @@ Reduce the dimensions of the X DataFrame to three principal components and place
 Create an elbow curve using hvPlot to find the best value for K from the pcs_df DataFrame created in Deliverable 2. Then, run the K-means algorithm to predict the K clusters for the cryptocurrencies’ data.
   - The K-means algorithm is used to cluster the cryptocurrencies using the PCA data, where the following steps have been completed:
     - An elbow curve is created using hvPlot to find the best value for K
-    
+    <img width="641" alt="image" src="https://user-images.githubusercontent.com/106962921/194946966-1adf663a-2976-4c75-830a-469acb59958e.png">
     
     - Predictions are made on the K clusters of the cryptocurrencies’ data
+    <img width="412" alt="image" src="https://user-images.githubusercontent.com/106962921/194947055-f3708fbb-4713-49d9-83fa-b120daaf0419.png">
     
-    
-    - A new DataFrame is created with the same index as the crypto_df DataFrame and has the following columns: Algorithm, ProofType, TotalCoinsMined, TotalCoinSupply,     PC 1, PC 2, PC 3, CoinName, and Class 
-
+    - A new DataFrame is created with the same index as the crypto_df DataFrame and has the following columns: Algorithm, ProofType, TotalCoinsMined, TotalCoinSupply,     PC 1, PC 2, PC 3, CoinName, and Class
+    <img width="565" alt="image" src="https://user-images.githubusercontent.com/106962921/194947154-8c29f99e-bd2a-436f-9713-ca7c0bbee85b.png"> 
 
 ### ***Deliverable 4: Visualizing Cryptocurrencies Results***
 Visualize the distinct groups that correspond to the three principal components created in Deliverable 2, then create a table with all the currently tradable cryptocurrencies using the hvplot.table() function.
   - The clusters are plotted using a 3D scatter plot, and each data point shows the CoinName and Algorithm on hover
-  
+  <img width="643" alt="image" src="https://user-images.githubusercontent.com/106962921/194947536-cdf684ed-6c56-4b82-83fe-8ebc2f6e82b8.png">
   
   - A table with tradable cryptocurrencies is created using the hvplot.table() function
-  
+  <img width="640" alt="image" src="https://user-images.githubusercontent.com/106962921/194947689-6c284029-280b-4d9c-94aa-aa7891afa84e.png">
   
   - The total number of tradable cryptocurrencies is printed
-  
+  <img width="374" alt="image" src="https://user-images.githubusercontent.com/106962921/194947742-9a210e9c-f45f-4d4f-9ed7-f96e949c24ff.png">
   
   - A DataFrame is created that contains the clustered_df DataFrame index, the scaled data, and the CoinName and Class columns
-  
+  <img width="607" alt="image" src="https://user-images.githubusercontent.com/106962921/194947802-8491f8ca-81e2-4e12-9ecf-a3f645a619d6.png">
   
   - A hvplot scatter plot is created where the X-axis is "TotalCoinsMined", the Y-axis is "TotalCoinSupply", the data is ordered by "Class", and it shows the CoinName   when you hover over the data point
-
+  <img width="589" alt="image" src="https://user-images.githubusercontent.com/106962921/194947910-8a8e56bf-4ea4-4835-9a7e-80f5d8ab17d9.png">
 
 ## Summary:
