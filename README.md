@@ -1,4 +1,5 @@
 # Cryptocurrencies
+![image](https://user-images.githubusercontent.com/106962921/194949263-c9d7e72d-d7e9-4730-a142-2482647cc85a.png)
 
 ## Overview of the analysis:
 Accountability Accounting, a prominent investment bank, is interested in offering a new cryptocurrency investment portfolio for its customers. The company, however, is lost in the vast universe of cryptocurrencies. So, they have requested to create a report that includes what cryptocurrencies are on the trading market and how they could be grouped to create a classification system for this new investment.
@@ -73,5 +74,3 @@ Visualize the distinct groups that correspond to the three principal components 
   
   - A hvplot scatter plot is created where the X-axis is "TotalCoinsMined", the Y-axis is "TotalCoinSupply", the data is ordered by "Class", and it shows the CoinName   when you hover over the data point
   <img width="589" alt="image" src="https://user-images.githubusercontent.com/106962921/194947910-8a8e56bf-4ea4-4835-9a7e-80f5d8ab17d9.png">
-
-## Summary:
