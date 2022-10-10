@@ -9,23 +9,27 @@ The data that will be working with is not ideal, so it will need to be processed
 ### ***Deliverable 1: Preprocessing the Data for PCA***
 Preprocess the dataset in order to perform PCA
   - The following five preprocessing steps have been performed on the crypto_df DataFrame:
-    - All cryptocurrencies that are not being traded are removed
+    - All cryptocurrencies that are not being traded are removed.
     ![image](https://user-images.githubusercontent.com/106962921/194889040-b0c1a8a1-7d78-431f-8d7d-023b8331a6cd.png)
+        
+    - The IsTrading column is dropped.
+    - 
+    ![image](https://user-images.githubusercontent.com/106962921/194890770-349cc0e2-171e-4a51-bd42-84607f7331b1.png)
+        
+    - All the rows that have at least one null value are removed.
+     
+    ![image](https://user-images.githubusercontent.com/106962921/194891423-2e91ccab-e2f6-4e6d-87ee-36d7405e13d1.png)
+        
+    - All the rows that do not have coins being mined are removed.
+    ![image](https://user-images.githubusercontent.com/106962921/194891687-43913a22-9ded-4408-a634-9f5597646675.png)
+
     
-    - The IsTrading column is dropped
-    
-    
-    - All the rows that have at least one null value are removed
-    
-    
-    - All the rows that do not have coins being mined are removed
-    
-    
-    - The CoinName column is dropped
-    
+    - The CoinName column is dropped.
+    ![image](https://user-images.githubusercontent.com/106962921/194892495-dcff39a4-8cf3-4b77-8c8b-ea9f3f925714.png)  
     
   - A new DataFrame is created that stores all cryptocurrency names from the CoinName column and retains the index from the crypto_df DataFrame
-  
+   
+  ![image](https://user-images.githubusercontent.com/106962921/194892168-e8de7173-97d1-4986-bae0-334c7f861f1d.png)
   
   - The get_dummies() method is used to create variables for the text features, which are then stored in a new DataFrame, X
   
