@@ -13,7 +13,7 @@ Preprocess the dataset in order to perform PCA
     ![image](https://user-images.githubusercontent.com/106962921/194889040-b0c1a8a1-7d78-431f-8d7d-023b8331a6cd.png)
         
     - The IsTrading column is dropped.
-    - 
+     
     ![image](https://user-images.githubusercontent.com/106962921/194890770-349cc0e2-171e-4a51-bd42-84607f7331b1.png)
         
     - All the rows that have at least one null value are removed.
@@ -32,18 +32,18 @@ Preprocess the dataset in order to perform PCA
   ![image](https://user-images.githubusercontent.com/106962921/194892168-e8de7173-97d1-4986-bae0-334c7f861f1d.png)
   
   - The get_dummies() method is used to create variables for the text features, which are then stored in a new DataFrame, X
+  <img width="844" alt="image" src="https://user-images.githubusercontent.com/106962921/194945835-494c20b1-3cf2-4123-9c2a-cddef17c98da.png">
   
-  
-  - The features from the X DataFrame have been standardized using the StandardScaler fit_transform() function     
- 
+  - The features from the X DataFrame have been standardized using the StandardScaler fit_transform() function
+  <img width="443" alt="image" src="https://user-images.githubusercontent.com/106962921/194946000-c69a1b58-2676-407b-8e4f-5d80d359bd15.png"> 
 
 ### ***Deliverable 2: Reducing Data Dimensions Using PCA***
 Reduce the dimensions of the X DataFrame to three principal components and place these dimensions in a new DataFrame using PCA algorithm
   - The PCA algorithm reduces the dimensions of the X DataFrame down to three principal components
-  
+  <img width="404" alt="image" src="https://user-images.githubusercontent.com/106962921/194946113-96621c98-11a9-4bae-9a01-c1c8e915866a.png">
   
   - The pcs_df DataFrame is created and has the following three columns, PC 1, PC 2, and PC 3, and has the index from the crypto_df DataFrame
-
+  <img width="616" alt="image" src="https://user-images.githubusercontent.com/106962921/194946186-53dfb209-4b05-4514-ae26-62ae125d9ed3.png">
 
 ### ***Deliverable 3: Clustering Cryptocurrencies Using K-means***
 Create an elbow curve using hvPlot to find the best value for K from the pcs_df DataFrame created in Deliverable 2. Then, run the K-means algorithm to predict the K clusters for the cryptocurrencies’ data.
